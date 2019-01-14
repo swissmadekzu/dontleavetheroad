@@ -18,8 +18,8 @@ email: antoinelenoir.info@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Don't Leave the Road est un jeu de rôle amateur post-apocalyptique horrifique en
   cours de création sur la plateforme Multiversalis et sur Github.
-baseurl: "/dontleavetheroad" # the subpath of your site, e.g. /blog
-url: "https://swissmadekzu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  swissmadekzu
 
 # Build settings
