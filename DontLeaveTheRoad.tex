@@ -1,0 +1,670 @@
+% Changing book to article will make the footers match on each page,
+% rather than alternate every other.
+%
+% Note that the article class does not have chapters.
+\documentclass[a4paper,10pt,twoside,twocolumn,openany,bg=print]{dndbook}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstring-captions.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[french]{babel}
+
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\begin{document}
+
+\section*{Chronique d'un monde en perdition}
+
+Cela fait quelques jours que vous avez quitté ce hameau perdu au milieu de la forêt. Le chemin que vous suivez est très mal entretenu, comme souvent dans ces terres que les dieux ont abandonné. Les mains serrés sur votre vieux fusil, vous avancez, espérant voir au loin la fumée d'une communauté. Autour de vous, dans les ténèbres des bois, des grincements, des chuintements et des grognements se font entendre.
+
+L'on dit que les créatures n'attaquent pas la route, mais est-ce seulement vrai ? Peut-être qu'aucun voyageur n'a survécu à une confrontation à ce qui vit en dehors des sentiers balisés.
+
+Enfin, les routes aussi sont dangereuses. Des bandits rôdent à la recherche de victimes apeurées. On raconte dans certains bars que des bandes de bandits se sont converties au cannibalisme, et que certains fabriquent des vêtements avec la peau des voyageurs qu'ils ont assassinés...
+
+Monde de merde. Il paraît que c'était mieux avant, qu'on pouvait faire des balades en forêt, que les routes étaient sûres, mais cela fait un bout de temps que le dernier homme ayant connu cet état de grâce a ravalé son extrait de naissance...
+
+Vous continuez d'avancer, manquant de trébucher sur une racine qui s'est développée jusqu'au milieu du chemin. Au dessus de vous, un bruit de grandes ailes membraneuses se fait entendre. Vous préférez ne pas vous retourner et accélérez le pas. Trop de voyageurs ont été pris de panique et ont fui sans faire attention à leur direction, juste en apercevant une de ces bêtes, et ils ont oublié la règle la plus élémentaire...
+
+\textbf{Ne jamais quitter la route...}
+
+\tableofcontents
+
+\chapter{Système de jeu}
+
+Le système de jeu se veut très simple et axé sur la narration plus que sur des jets de dés à répétition. Le d12 est le principal (seul) dé utilisé. 
+
+\section{Caractéristiques}
+
+Les caractéristiques sont au nombre de 3 :
+
+\begin{itemize}
+	\item \textbf{Corps :} Pour toutes les actions physiques et la résistance aux chocs.
+	\item \textbf{Esprit :} Pour les actions mentales et la résistance à la folie et à la peur.
+	\item \textbf{Âme :} Pour les actions sociales et la résistance aux intimidations et mensonges divers et variés.
+\end{itemize}
+
+La valeur d'une caractéristique se situe entre 0 (amorphe ou mort) et 12 (surhumanité totale). La moyenne humaine d'une caractéristique est de 5.
+
+\subsection*{Le Corps}
+
+La caractéristique de Corps représente son aptitude physique. Un personnage fort, agile ou résistant sera donc doté d'un Corps élevé. Par opposition, une personne à la santé fragile ou maladroite aura un Corps faible. La réserve de Corps est également la santé physique, qui diminue lorsque le personnage se fait blesser physiquement.
+
+\begin{dndtable}
+\textbf{Valeur de Corps} & \textbf{Description} \\
+12 & Surhumain. Il n'est pas difficile de défoncer des murs de forteresse ou de courir sur l'eau. \\  
+10 & Extrêmement fort. Vous êtes invaincu au bras de fer depuis des années et les microbes fuient en vous voyant.\\ 
+8 & Très fort, agile et endurant. Maximum à la création. \\
+5 & Moyenne humaine \\
+3 & Faiblard. Minimum à la création
+\end{dndtable}
+
+\subsection*{L'Esprit}
+
+La caractéristique d'Esprit représente son aptitude mentale. Un personnage intelligent, astucieux ou attentif sera donc doté d'un Esprit élevé. Par opposition, une personne à la intelligence limitée ou peu réceptif aura un Esprit faible. La réserve d'Esprit est également la santé mentale, qui diminue lorsque le personnage est confronté à des événements traumatisants, ou se fait attaquer psychiquement.
+
+\begin{dndtable}
+\textbf{Valeur d'Esprit} & \textbf{Description} \\
+12 & Surhumain. Votre esprit surentraîné détecte les moindres incohérences, et votre perception est meilleure que celle du plus terrible prédateur. \\  
+10 & Extrêmement doué. Vous êtes invaincu au bras de fer depuis des années et les microbes fuient en vous voyant.\\ 
+8 & Très intelligent et perceptif. Maximum à la création. \\
+5 & Moyenne humaine \\
+3 & Myope comme une taupe ou stupide. Minimum à la création
+\end{dndtable}
+
+\subsection*{L'Âme}
+
+La caractéristique d'Âme représente son aptitude sociale. Un personnage charismatique ou beau sera donc doté d'une Âme élevée. Par opposition, une personne laids ou effacée aura une Âme faible. La réserve de Corps est également la santé sociale, qui diminue lorsque le personnage se fait blesser socialement, comme lors d'un duel d'éloquence.
+
+\begin{dndtable}
+\textbf{Valeur d'Âme} & \textbf{Description} \\
+12 & Surhumain. Votre verve et votre beauté sont révérées dans les légendes. \\  
+10 & Extrêmement charismatique. Il suffit que vous entriez dans une auberge pour que tous les regards se tournent vers vous.\\ 
+8 & Très beau, charismatique et avec une belle verve. Maximum à la création. \\
+5 & Moyenne humaine \\
+3 & Laid ou effacé. Minimum à la création
+\end{dndtable}
+
+\subsection*{Valeur et réserve de caractéristiques}
+
+La valeur de caractéristique est (pour un nouveau personnage) le nombre de points attribués à la caractéristique.
+
+La réserve de caractéristique est le nombre actuel de points qu'a le personnage dans sa caractéristique. Elle monte et descend lors de l'histoire.
+
+Lorsque la réserve de caractéristique arrive à 0, le personnage n'est plus jouable. Le joueur doit alors créer un nouveau personnage. À 0 de Corps, un personnage est mort, rekt, fini quoi. À 0 d'Esprit, il est complètement fou. À 0 d'Âme, il est catatonique et ne s'exprime plus que par grognements.
+
+\subsection*{Prendre des dommages dans une caractéristique}
+
+Lorsqu'un personnage subit des dégâts physiques, ceux-ci sont directement impactés dans sa caractéristique de Corps.
+
+Lorsqu'il subit une grande peur ou des émotions mentales divergentes (par exemple, en étant attiré et révulsé à la fois par la bête qu'il voit), cela crée des dégâts mentaux qui sont impactés dans la caractéristique d'Esprit
+
+Lorsqu'il est intimidé fortement ou encore ridiculisé en public, c'est la caractéristique d'Âme qui est touchée.
+
+\subsection*{Regagner sa réserve de caractéristique}
+
+Lorsqu'un personnage se repose dans un lieu (relativement) sûr pendant quatre heures, il regagne un point dans une de ses réserves de caractéristiques. S'il choisit de se reposer huit heures, il aura donc deux points à répartir entre deux caractéristiques, ou deux points dans une seule, à choix. Trois points pour douze heures, etc... On parle ici de repos, cela peut donc être trainer dans le bar d'une communauté (si le bar est assez sûr, je déconseille à tous le bouge des trafiquants de cerveaux), dormir, ou encore entretenir son équipement.
+
+À la fin d'un \textbf{Scénario}, un personnage remonte toutes ses réserves à la valeur de caractéristique.
+
+\section{Aspects}
+
+Un personnage est défini par trois aspects :
+
+\subsection*{Concept}
+
+Le concept du personnage définit qui il est, quelle est sa spécialité, et quel peut être son trait de caractère le plus marquant. On définira par exemple un personnage comme \emph{Bûcheron acariâtre} ou encore \emph{Bourgmestre cupide}
+
+\subsection*{Réconfort}
+
+Il s'agit ici de quelque chose ou quelqu'un qui apporte un grand réconfort au personnage. Cela peut être une petite amie, un colifichet, une arme, tout (ou presque) est possible. Le réconfort permet au personnage de regagner ses points de caractéristique perdus deux fois plus vite, uniquement lorsqu'il est à proximité. Dans le cas où le personnage a perdu (définitivement ou non) sa source de réconfort, il perd cette aptitude jusqu'à la fin d'un \textbf{Cycle}. \emph{(Voir ci-dessous)} (ou jusqu'à ce qu'il le retrouve, ce qui peut donner lieu à un Scénario ou à un Cycle complet). À la fin d'un Cycle, il peut choisir un nouveau Réconfort.
+
+\subsection*{Crainte}
+
+La crainte du personnage est sa plus grande peur. Elle doit être cohérente avec l'univers. Lorsqu'il est confronté à sa crainte, le personnage doit immédiatement faire un test d'Esprit à difficulté 12. S'il réussit, il a combattu sa peur et gagne un Point de Destin. S'il échoue, il perd un point d'Esprit.
+
+\section{Points de destin}
+
+Dans des cas extrêmes, un personnage peut influencer quelque peu le destin. Pour ce faire, il bénéficie de points de destin. Un point de destin peut être dépensé pour :
+
+\begin{itemize}
+	\item Relancer un jet, quel que soit le résultat
+	\item Éviter de mourir, devenir fou ou amorphe. Lorsque des dégâts devraient amener une de ses caractéristiques à 0, il peut dépenser un point de destin pour ramener sa réserve de caractéristique à 1, et être simplement inconscient. Le MJ ne devrait pas s'acharner sur le personnage, après tout, il vient de survivre à une mort certaine.
+\end{itemize}
+
+\section{Actions}
+
+Lorsque le résultat d'une action n'est pas automatiquement réussi ou automatiquement échoué, on lance 1d12 auquel on ajoute la réserve de caractéristique liée, et on compare à un seuil de réussite. 
+
+\begin{itemize}
+	\item Si le résultat est supérieur au seuil, l'action est \textbf{réussie}
+	\item Si le résultat est égal, l'action est \textbf{réussie}, mais avec une \textbf{complication}
+	\item Si le résultat est inférieur, l'action est \textbf{échouée}
+\end{itemize}
+
+\subsection*{Les extrêmes du dé}
+
+Si le résultat du dé est un 12 naturel, on dit que la réussite est critique. Cela entraîne les possibilités suivantes :
+
+\begin{itemize}
+	\item Le personnage a si bien réussi son action, que le prochain jet en relation, que ce soit le sien ou celui de l'un de ses alliés, bénéficiera d'un bonus de +3.
+	\item Le personnage a visé un point sensible de son adversaire, et inflige donc deux fois plus de dommages.
+	\item L'action du personnage visait à handicaper son adversaire, qui subira donc un malus de -3 à son prochain jet en relation.
+\end{itemize}
+
+Si le résultat du dé est un 1 naturel, il s'agit d'un échec critique, et ce n'est généralement pas bon... Cela entraîne les possibilités suivantes :
+
+\begin{itemize}
+	\item Non seulement le personnage a complètement raté son action, mais il s'est blessé dans la manoeuvre. Il perd un point de sa réserve de la caractéristique associée.
+	\item En attaquant son adversaire, il a gravement ouvert sa garde. Lors de sa prochaine attaque, l'adversaire aura un bonus de +3.
+	\item Quelque chose de très mauvais s'est produit. Le MJ peut imaginer n'importe quelle complication.
+\end{itemize}
+
+\begin{paperbox}{Option : Confirmation de critiques}
+Si on désire que les critiques (échecs comme réussites) soient moins fréquents, il existe la possibilité de faire confirmer les critiques.Pour ce faire, lorsque le dé tombe sur un extrême, on relance le jet.
+
+\begin{itemize}
+\item Si le jet originel était un 12 naturel et que le résultat du second jet est supérieur ou égal à la difficulté, il s'agit d'une réussite critique. Sinon, il s'agira uniquement d'une réussite simple.
+\item Si le jet originel était un 1 naturel et que le résultat du second jet est inférieur à la difficulté, il s'agit d'un échec critique. Sinon, il s'agit d'un échec simple.
+\end{itemize}
+\end{paperbox}
+
+\subsection*{Donner de sa personne}
+
+Lorsqu'un personnage effectue une action, il peut choisir de donner de soi-même pour réussir son action. (Cela peut être fait avant ou après l'annonce du résultat)
+
+Lorsqu'il donne de sa personne, il dépense un point de la réserve de la caractéristique concernée, et peut alors faire augmenter le degré de réussite d'un cran. Attention, un échec critique restera un échec critique, et on ne peut pas obtenir de réussite critique de cette façon !
+
+Dépenser un point de sa réserve peut donc :
+
+\begin{itemize}
+	\item Faire passer d'un échec à une réussite avec complication
+	\item Faire passer d'une réussite avec complication en réussite
+\end{itemize}
+
+\section{Scénario, Cycle et Campagne}
+
+\subsection*{Scénario}
+
+Un Scénario est défini généralement par un but (aller chercher un voyageur perdu, apporter un message d'une communauté à une autre, comprendre pourquoi le bourgmestre de Trifouilli-les-oies est une ordure finie et l'amener à la raison ou à son destin, ...). Un Scénario peut se dérouler sur plusieurs séances de jeu.
+
+À la fin d'un Scénario, les personnages :
+
+\begin{itemize}
+	\item Regagnent toutes leurs réserves de caractéristiques à hauteur de leurs valeurs.
+	\item Sont heureux d'avoir survécu aux expériences de ce monde de merde...
+	\item Gagnent de l'expérience en fonction de leurs actions et des répercussions que celles-ci ont eu sur le monde.
+\end{itemize}
+
+\subsection*{Cycle}
+
+Un Cycle est une suite de scénarios définis par une ligne directrice (qui peut être très floue). Cela peut être un ensemble de Scénarios où l'un des personnages est impliqué par sa famille, ou bien plusieurs missions données par un même donneur d'ordres, etc...
+
+À la fin d'un Cycle, les personnages :
+
+\begin{itemize}
+	\item Gagnent les mêmes bonus que lors d'une fin de Scénario
+	\item Peuvent modifier leur Réconfort, ou choisir un nouveau Réconfort s'ils ont définitivement perdu le leur.
+\end{itemize}
+
+\subsection*{Campagne}
+
+Une Campagne est une suite de Cycles qui raconte l'histoire vécue par les personnages en jeu.
+
+À la fin d'une Campagne, les personnages partent à la retraite...
+
+\section{Progression des personnages}
+
+Traditionnellement, les personnages gagneront de l'expérience en fin de scénario. L'expérience peut servir à augmenter des traits, en accord avec le MJ. Le coût pour augmenter un trait est égal au \textbf{Niveau à atteindre} $\times$ \textbf{3}. Il est impossible de dépasser une valeur de 4 avec un trait.
+
+À la fin d'un cycle, les personnages ont également la possibilité de faire progresser leurs caractéristiques, contre beaucoup d'expérience. Le coût pour augmenter une caractéristique est égal au \textbf{Niveau à atteindre} $\times$ \textbf{5}. Il est impossible de dépasser une valeur de 12 pour une caractéristique.
+
+\chapter{Création de personnage}
+
+La création de personnage pour Don't Leave The Road se déroule en plusieurs étapes.
+
+\section{Choisir un concept de personnage}
+
+En tout premier lieu, il est important de savoir quoi jouer. Par conséquent, la toute première chose à décider est le concept du personnage. Ce qu'il est, ce qu'il aime.
+
+\begin{quotebox}
+Exemple : Bob a envie de jouer une combattante farouche qui s'énerve facilement. Il va donc inscrire dans son concept : Epéiste au sale caractère.
+\end{quotebox}
+
+Un bon concept devrait de préférence donner des indications sur la spécialité et un aspect de la psychologie du personnage.
+
+Inscrivez également le nom du personnage si vous avez déjà choisi. Autrement vous avez encore du temps pour décider durant les prochaines étapes.
+
+\section{Répartir les points de caractéristique}
+
+Un personnage dispose de trois caractéristiques : Le Corps, l'Esprit et l'Âme. Chacune de ces caractéristiques peut avoir une valeur comprise entre 2 et 8 à la création. On considèrera que 5 est une valeur moyenne pour un humain lambda.
+
+Un personnage débutant dispose de 17 points à répartir entre ces trois caractéristiques.
+
+\begin{quotebox}
+Exemple : Pour sa combattante, Bob a choisi de faire un personnage équilibré, mais dont la caractéristique d'Âme est assez basse, rapport au caractère de cochon. Il répartit donc 7 points en Corps, 6 en Esprit et 4 en Âme.
+\end{quotebox}
+
+Un personnage débute avec 2 points de destin.
+
+\section{La Voie des Origines}
+
+La Voie des Origines permet de définir les traits (ou compétences) du personnage de manière cohérente avec l'univers et de créer un début de background.
+
+Elle se déroule en trois étapes successives.
+
+\subsection*{Grandir dans une communauté}
+
+Lorsqu'un bambin évolue dans une communauté, il apprend naturellement au contact des autres. C'est pourquoi le premier trait à +1 est déterminé par l'activité principale de la communauté où il vit. Par exemple, un enfant ayant grandi dans un petit village vivant majoritairement de l'agriculture aura comme premier trait Paysan, tandis que s'il grandit dans un bourg spécialisé dans la briquèterie, il aura Artisan en premier trait.
+
+Si vos joueurs veulent être originaires de la même communauté, ils auront donc ce trait en commun.
+
+\begin{quotebox}
+Exemple : Le groupe de joueurs a décidé de créer des personnages originaires de la Colline-aux-Chênes, une communauté dont la spécialité est la charbonnerie. Leur trait d'origine sera donc Forestier. Les joueurs inscrivent donc le trait Forestier avec une valeur de +1.
+\end{quotebox}
+
+\subsection*{Quand je serai grand, je ferai comme Papa !}
+
+On apprend toujours plus de ses parents, aussi le métier de l'un des parents apparaîtra en second trait à +1. On fera toutefois attention à sélectionner un trait différent du premier. Ce n'est pas forcément le métier du père, mais peut aussi être celui du grand-père, du tonton taré, ou même d'un mentor de l'enfance.
+
+\begin{quotebox}
+Exemple : Bob a décidé que le père de son personnage était membre du conseil du village, et que son personnage a beaucoup appris de celui-ci sur la manière de gérer efficacement une communauté. Il inscrit donc le trait Administrateur avec la valeur de +1.
+\end{quotebox}
+
+\subsection*{L'apprentissage final}
+
+Pour finir, le personnage a appris un métier à part, qui fait de lui quelqu'un de spécial dans sa communauté (et le fera sans doute partir sur les routes, le pauvre). Ce trait final a une valeur de +2, et doit être un trait différent des deux premiers.
+
+\begin{quotebox}
+Exemple : Bob estime que son personnage a appris le métier des armes et inscrit donc le trait Soldat avec une valeur de +2. Son personnage a donc comme traits Forestier +1, Administrateur +1 et Soldat +2.
+\end{quotebox}
+
+\begin{paperbox}{Option : Jouer un personnage plus expérimenté}
+Avec l'accord du MJ, il est possible de créer un personnage ayant un peu plus de bouteille. Dans ce cas, le joueur sélectionne un trait supplémentaire à +1, ou ajoute 1 à la valeur d'un de ses traits existants. Le personnage commencera avec un point de destin en moins.
+\end{paperbox}
+
+\header Niveau de trait et rang associé
+\begin{dndtable}
+\textbf{Niveau du trait} & \textbf{Rang} \\
+1 & Apprenti \\  
+2 & Compagnon \\ 
+3 & Maître \\
+4 & Grand-Maître
+\end{dndtable}
+
+\section{Les aspects du personnage}
+
+\subsection*{La crainte}
+
+Choisissez une crainte. C'est la principale peur de votre personnage. Soyez cohérent avec l'univers dans lequel vous vivez. La source de cette peur doit exister dans l'univers, et le MJ doit pouvoir l'utiliser à votre encontre.
+
+\subsection*{Le réconfort}
+
+À présent, choisissez une source de réconfort. Cela peut être une personne, un objet, un lieu, en gros quelque chose de physique. Attention toutefois, l'avantage donné par la source de réconfort ne fonctionne que lorsque vous êtes physiquement en sa présence.
+
+\section{L'équipement}
+
+Décidez maintenant de l'équipement que portera votre personnage. Porte-t-il une armure lourde ? légère ? Avec quel type d'arme combat-il ? Soyez à nouveau cohérent avec l'univers. Pas de lance plasma dans un univers médiéval !
+
+\newpage
+
+\chapter{Les traits}
+
+Un personnage est défini par ses caractéristiques mais surtout par ses compétences appelées traits. Les traits sont décrits dans cette section. La liste de traits ici présentée est celle d'\emph{Unterwald}
+
+Lors d'un jet de dés, on ne peut utiliser qu'un seul trait. Celui-ci est déterminé en concertation entre le MJ et le joueur.
+
+\section*{Administrateur}
+
+L'Administrateur sait gérer une communauté ou une entreprise, de son aspect financier à l'aspect humain, en passant par la gestion de ses activités au jour le jour.
+
+\section*{Artisan}
+
+L'Artisan peut transformer les matériaux bruts en objets finis, il peut être formé dans le travail du bois, des métaux, ou de toute autre matière. On regroupe sous ce trait la plupart des métiers de production.
+
+\section*{Artiste}
+
+L'Artiste crée la beauté dans ce monde en décrépitude. Il peut être peintre, musicien, poète, peu importe...
+
+\section*{Athlète}
+
+L'Athlète est à la fois vif et fort. Il peut courir vite, sauter haut, ou esquiver des dangers face auxquels d'autres succomberaient rapidement.
+
+\section*{Bagarreur}
+
+Le Bagarreur sait comment se comporter lorsque les choses s'enveniment. Lorsqu'il est confronté à des conflits, il sait comment clore les débats par un poing final.
+
+\section*{Batelier}
+
+Le Batelier est particulièrement à l'aise sur les cours d'eau ou les mers tourmentées. Que ce soit sur un immense galion ou une petite barque, il pourra toujours manoeuvrer l'embarcation.
+
+\section*{Chasseur}
+
+Le Chasseur sait traquer et abattre toutes sortes de proies et de prédateurs. Il est doué pour se cacher dans les milieux naturels, notamment lorsqu'il est lui-même une proie...
+
+\section*{Citadin}
+
+Le Citadin sait se comporter parfaitement en milieu urbain. Il sait y trouver son chemin, parler aux habitants ou encore trouver des opportunités dans les communautés importantes.
+
+\section*{Éclaireur}
+
+L'Eclaireur est un excellent observateur. Il sait s'orienter, observer et faire un rapport, tout comme éliminer discrètement une menace un peu trop présente.
+
+\section*{Érudit}
+
+L'Erudit est féru de connaissances diverses et variées. Dans de nombreux cas de figure, il saura apporter sa pierre à l'édifice en apportant son savoir.
+
+\section*{Ferrailleur}
+
+Le Ferrailleur est capable de récupérer la moindre denrée précieuse dans un tas de déchets. Il est également capable de réparer des objets avec ce qu'il trouve.
+
+\section*{Forestier}
+
+Le Forestier est l'expert du sous-bois et de tout milieu naturel. Il sait également comment entretenir une production de bois et s'orienter en dehors des sentiers balisés, tout en gardant une certaine prudence.
+
+\section*{Gentilhomme}
+
+Le Gentilhomme sait comment se comporter avec les Grands de ce monde. Il sait évoluer dans les hautes sphères de la société, et en tirer des avantages.
+
+\section*{Intrigant}
+
+L'Intrigant est un as de la langue de bois. Il sait obtenir ce qu'il veut de tout un chacun en manipulant les humeurs et les envies.
+
+\section*{Larron}
+
+Le Larron a toujours plus d'un tour dans son sac, ou plutôt dans le sac des autres. Il est discret et sait effectuer des emprunts à durée indéterminée.
+
+\section*{Marchand}
+
+Le Marchand sait comment fonctionne le commerce, malgré les dangers de ce monde. Il est bon négociateur et est doué pour estimer la valeur des choses.
+
+\section*{Médecin}
+
+Le Médecin sait soigner les gens et les animaux. Il a une bonne connaissance des plantes médicinales, ainsi que de l'anatomie.
+
+\section*{Orateur}
+
+L'Orateur sait parler. Et bien parler de surcroît ! Il n'a pas le trac devant une foule et saura les convaincre à son point de vue.
+
+\section*{Paysan}
+
+Le Paysan sait travailler la terre, cultiver les céréales et légumes, et s'occuper du bétail. Il sait également se comporter dans un environnement rural.
+
+\section*{Saltimbanque}
+
+Le Saltimbanque sait comment divertir les masses par ses jeux, ses chants ou ses poèmes. Il est également doué pour convaincre les gens.
+
+\section*{Soldat}
+
+Le Soldat sait combattre, commander des troupes et les entraîner. Il sait se servir d'une arme comme l'entretenir, et peut élaborer des stratégies.
+
+\section*{Vagabond}
+
+Le Vagabond est capable de survivre dans toutes les conditions les plus extrêmes, en trouvant sa subsistance dans toute situation.
+
+\section*{Voyageur}
+
+Le Voyageur connaît les codes des voyages et la topographie des routes. Il sait comment se comporter dans une caravane ou dans les relais.
+
+\newpage
+
+\chapter{Le combat et les dangers}
+
+Il arrive que les personnages soient obligés à combattre pour sauver leur misérable existence. Dans cette section, on abordera les règles des combats, des dommages et du soin.
+
+\section{Défense passive ou active}
+
+La défense correspond au seuil de difficulté pour blesser un personnage (sur n'importe quelle des trois caractéristiques). Elle peut être soit active, soit passive.
+
+Elle est dite \textbf{active} lorsque le personnage utilise son action du tour pour se défendre uniquement, et \textbf{passive} lorsqu'il cherche à agir lors de son tour.
+
+La défense passive est égale à la \textbf{réserve de la caractéristique attaquée + 5}. Un personnage ayant une caractéristique de 5 en corps aura donc un seuil de difficulté de 10 pour être blessé par une attaque physique.
+
+La défense active est définie par un jet de la caractéristique attaquée, soit la \textbf{réserve de caractéristique + un éventuel trait + 1d12}. En effet, même en se défendant de manière active, il est toujours possible de se tromper et d'ouvrir sa garde.
+
+\section{Tours de combat}
+
+Un combat est défini en tours. Un tour se déroule de la manière suivante :
+
+Les personnages-joueurs ont chacun une action, et agissent l'un après l'autre (ici, pas de règle d'initiative, laissez les joueurs s'arranger entre eux). Ils peuvent :
+
+\begin{itemize}
+\item Attaquer
+\item Se défendre activement
+\item Aider un allié
+\item Fuir (quitter la confrontation)
+\end{itemize}
+
+\section{Actions lors du combat}
+
+\subsection*{Attaquer}
+
+Une action d'attaque est effectuée par un jet de la caractéristique associée, à savoir le Corps pour les attaques physiques (au corps à corps ou à distance), l'Esprit pour les attaques mentales, et l'Âme pour les attaques sociales, contre la défense associée (active ou passive)
+
+Si le jet est réussi, alors l'attaque inflige les \textbf{dégâts de l'arme + la marge de réussite}.
+
+\subsection*{Se défendre activement}
+
+Comme indiqué dans la section sur la défense, lorsqu'un personnage se défend, il utilise sa défense active au lieu de sa défense passive pour définir le seuil de difficulté.
+
+\subsection*{Aider un allié}
+
+Un personnage peut choisir d'aider un allié, soit à attaquer, soit à se défendre, soit à fuir un combat. Ce faisant, il doit effectuer un jet de \textbf{la caractéristique associée + un éventuel trait} contre une difficulté de \textbf{12}. En cas de réussite, son allié aura un bonus de \textbf{+3} à son jet.
+
+\subsection*{Fuir une confrontation}
+
+Par moments, il est vraiment difficile d'affronter certaines créatures ou personnes. Aussi, il est possible de fuir une confrontation. Pour ce faire, il faut faire un jet de Corps (dans le cas d'un combat), d'Esprit (dans le cas d'une confrontation mentale) ou d'Âme (dans le cas d'une confrontation sociale). La difficulté de ce jet est de 12.
+
+\begin{itemize}
+\item Si le jet est \textbf{réussi}, alors le personnage s'est échappé de la confrontation et ne pourra plus y participer à moins qu'il ne décide d'y reprendre part. Cela lui évite ainsi de souffrir de dommages lors de la confrontation.
+\item Si le jet est \textbf{une réussite avec complication}, le personnage s'est échappé de la confrontation, mais a subi un point de dommage dans la caractéristique en question lors de sa fuite.
+\item Si le jet est un \textbf{échec}, le personnage n'a pas pu fuir et doit donc continuer la confrontation.
+\end{itemize}
+
+\section{Dommages et récupération}
+
+\subsection*{Infliger et encaisser des dégâts}
+
+Lorsqu'un personnage est blessé, il subit des dégâts dans la caractéristique liée. Ces points sont directement impactés dans sa réserve. On déduira toutefois la Protection induite par l'armure éventuelle.
+
+\emph{Par exemple, Bob (Corps 7/7) est en train de combattre un scolopendre géant (Créature 8/8, Morsure 2) qui l'a attaqué pendant la nuit. L'effroyable bestiole l'attaque et réussit à le blesser grâce à un jet d'attaque (1d12 + 8 : 6+8 = 14, ce qui est supérieur à la défense passive de Bob : 12). Sa marge de réussite est de 2 et les dégâts de la morsure sont de 2, pour un total de 4 points de dommages. La réserve de Corps de Bob tombe donc à 3 points. Il vient d'être salement blessé.}
+
+Lors d'une réussite critique, on calcule la marge de réussite + les dommages de l'arme et on multiplie par 2 le total.
+
+\subsection*{Récupération}
+
+Afin de récupérer sa réserve de caractéristique, plusieurs moyens sont envisageables.
+
+\begin{itemize}
+\item \textbf{Récupération naturelle :} Pour chaque tranche complète de 4h de repos, un personnage regagne un point de réserve. Cette récupération est doublée lorsque le personnage est en présence de sa source de réconfort.
+\item \textbf{Soin :} Il est possible de soigner des blessures physiques par un jet d'Esprit + Médecin. La difficulté du jet est égale à 12 + nombre de points à faire récupérer. Les blessures mentales peuvent être soignées par un jet d'Âme + Orateur de la même manière. Il n'est pas possible de soigner les blessures d'Âme de cette manière.
+\item \textbf{Fin de scénario :} À la fin d'un scénario, les personnages regagnent toutes leurs réserves jusqu'à leur valeur de caractéristique.
+\end{itemize}
+
+\subsection*{Pertes définitives de caractéristique}
+
+Certaines blessures peuvent être particulièrement dévastatrices. Il est possible pour certaines armes et/ou créatures d'infliger des dommages irréversibles à un personnage. Lorsque cela arrive, le personnage ne perd pas de points de sa réserve mais directement dans sa valeur de caractéristique. Si la valeur devient inférieure à la réserve, réduisez alors la réserve pour qu'elle soit égale à la valeur.
+
+\newpage
+
+\chapter{L'équipement}
+
+Le matériel dépend avant tout de l'univers utilisé. Par exemple, un personnage évoluant dans l'univers forestier d'\emph{Unterwald} n'aura pas forcément accès au même équipement qu'un \emph{Voyageur du Dehors}.
+
+On peut définir trois catégories principales d'équipement, à savoir les armes, les équipements de protection et le reste du matériel.
+
+\section{L'armement}
+
+Une arme est définie par trois facteurs :
+
+\begin{itemize}
+\item \textbf{Portée :} À quelle distance peut-elle porter (corps-à-corps, proche, loin). Par exemple, un couteau peut être utilisé au corps à corps et à faible distance. Un pistolet peut être utilisé à faible distance (au corps à corps, il compte comme une matraque), etc...
+\item \textbf{Taille :} De quelle taille est-elle (petit, moyen, grand). De cela, on définira les dégâts de base de l'arme.
+\item \textbf{Attributs :} A-t-elle des attributs spéciaux ? Certaines armes peuvent avoir des attributs spéciaux, comme une grenade qui possède un rayon d'effet.
+\end{itemize}
+
+\header{Armements}
+\begin{dndtable}
+\textbf{Taille de l'arme (Exemples)} & \textbf{Dégâts} \\
+Petite (couteau, petit pistolet, matraque) & 1 \\  
+Moyenne (épée, gros pistolet, pistolet-mitrailleur) & 2 \\ 
+Grande (épée à deux mains, fusil de chasse, fusil de précision) & 3
+\end{dndtable}
+
+\section{Équipements de protection}
+
+Oui, il faut se protéger aussi. Une armure est définie par deux facteurs: 
+
+\begin{itemize}
+\item \textbf{Protection :} La valeur de Protection définit le nombre de points déduits des dommages physiques reçus.
+\item \textbf{Attributs :} A-t-elle des attributs spéciaux ? Certaines armures peuvent avoir des attributs spéciaux, comme des colifichets qui apportent une Protection mystique qui déduit les dommages d'Esprit.
+\end{itemize}
+
+\header{Equipements de protection}
+\begin{dndtable}
+\textbf{Type d'armure (Exemples)} & \textbf{Protection} \\
+Légère (Blouson de moto, armure de cuir) & 1 \\  
+Moyenne (Cotte de mailles, Gilet tactique) & 2 \\ 
+Lourde (Armure de plaques, Gilet pare-éclats) & 3 
+\end{dndtable}
+
+\section{Equipement divers}
+
+On choisira de ne pas limiter l'équipement (avoir une feuille à côté pour tout noter est recommandé).
+
+Seuls les équipements apportant un bonus devraient être notés sur la feuille principale.
+
+\emph{Par exemple, Bob possède une caisse à outils très complète qui lui accorde un bonus de +2 aux tests de bricolage et de réparation.}
+
+\chapter{Le Meneur de Jeu}
+
+\section{Définir les difficultés d'actions}
+
+Tout ou presque est hostile dans ce monde en perdition. Lorsqu'un personnage est confronté à une adversité, voici quelques pistes pour fixer la difficulté d'une action.
+
+\header{Table indicative des difficultés}
+\begin{dndtable}
+\textbf{Niveau de difficulté} & \textbf{Seuil} \\
+Très facile & 6 \\  
+Facile & 9 \\ 
+Moyenne & 12 \\
+Difficile & 15 \\
+Très difficile & 18 \\
+Quasi impossible & 21 \\
+Surhumain & 24+
+\end{dndtable}
+
+On peut également ajouter des modificateurs aux actions des personnages, selon le contexte de l'action.
+
+\begin{quotebox}
+Exemple: Le personnage de Bob est en train de grimper une paroi rocheuse abrupte et instable. Le MJ a défini que l'action est difficile, donc Bob doit dépasser 15 sur un test de Corps + Athlète. Cependant, Bob mentionne que son personnage possède du matériel d'escalade, qui lui offre un bonus de +2 à son jet. Il lance le dé et obtient un 6, qu'il additionne à sa réserve de Corps de 7. Son personnage n'ayant pas le trait Athlète, il ne gagne pas de bonus lié. Il obtient un résultat de 13, qui avec le bonus de 2 de son équipement lui fait atteindre la difficulté de 15. Cela sera donc une réussite avec conséquence. Le personnage de Bob a réussi à grimper le long de la falaise, mais a perdu son outre alors qu'il manquait de décrocher.
+\end{quotebox}
+
+\section{Les adversaires}
+
+Une créature peut être définie de plusieurs manières différentes, selon qu'il s'agit d'un adversaire normal ou d'un adversaire principal.
+
+\subsection{Adversaires normaux}
+
+Les adversaires dits normaux sont uniquement définies par un score de créature (correspondant à une seule et unique caractéristique, avec sa valeur et sa réserve)
+
+Lors de la confrontation, on affecte les dégâts sur la réserve de cette unique caractéristique, et la créature est considérée comme vaincue lorsque la réserve atteint 0.
+
+Ces créatures peuvent également posséder des attributs de créatures ou des traits (dans le cas d'un PNJ).
+
+\begin{quotebox}
+Exemple: Les PJs se retrouvent sur le chemin d'une meute de loups assoiffés de sang. Les loups sont des créatures normales, avec un score de créature de 6.
+
+Un loup aura donc une valeur de caractéristique de 6 pour toutes ses actions. Sa défense passive est de 11.
+\end{quotebox}
+
+\subsection{Adversaires principaux}
+
+Les créatures principales sont définies comme un PJ, à savoir par les trois caractéristiques de Corps, Esprit et Âme.
+
+Les créatures principales possèdent au minimum un attribut de créature (ou des traits pour un PNJ). Leur valeur de caractéristique peut, si la créature a l'attribut "Caractéristique exceptionnelle", atteindre 15.
+
+Vous pourrez trouver ci-dessous quelques exemples d'attributs de créatures. La liste n'est pas exhaustive
+
+\header{Exemples d'attributs}
+\begin{dndtable}
+\textbf{Attribut} & \textbf{Description} \\
+Caractéristique exceptionnelle \emph{(Carac)} & La caractéristique en question peut dépasser 12. \\  
+Peur \emph{(valeur)} & La créature est effrayante. Les personnages en présence de cette créature doivent faire un test d'Esprit à difficulté 12 sous peine de perdre \emph{valeur} Esprit. \\ 
+Nuée & L'adversaire est composé de multiples petites créatures. Les dégâts reçus sont limités à 1 (2 en cas de réussite critique). \\
+Ailes & La créature peut voler \\
+Aberrante & La forme de la créature est complètement aberrante. La créature est immunisée aux coups critiques. 
+\end{dndtable}
+
+\subsection{Exemples d'adversaires}
+
+\subsubsection*{Loup corrompu}
+
+Cette créature ressemble à un loup gigantesque au dos hérissé de pointes noires, et à la gueule parsemée de crocs terriblement aiguisés.
+
+\begin{itemize}
+\item \textbf{Valeur de créature:} 6
+\item \textbf{Attributs:} -
+\item \textbf{Protection:} Peau épaisse (1)
+\item \textbf{Armes:} Crocs aiguisés (2)
+\end{itemize}
+
+\subsubsection*{Horreur chyroptère}
+
+L'horreur chyroptère est une monstruosité écailleuse, à la tête hérissée de pointes acérées, et à la gueule suintant d’un ichor noirâtre entre ses crocs saillants. Une paire d’ailes membraneuses de cinq mètres d'envergure totale complète la vision de cauchemar.
+
+\begin{itemize}
+\item \textbf{Valeur de créature:} 8
+\item \textbf{Attributs:} Ailes, Peur (2)
+\item \textbf{Protection:} 1 point de peau épaisse
+\item \textbf{Armes:} Griffes (1), Crocs (1)
+\item \textbf{Spécial:} En case de réussite critique sur un jet d'attaque, l'horreur chyroptère agrippe son adversaire et s'envole pour le lâcher depuis les airs.
+\end{itemize}
+
+\section{Gains d'expérience en fin de scénario}
+
+Vous trouverez ci-dessous des exemples de gains d'expérience en fin de scénario. Ceux-ci peuvent être ajustés selon la volonté du MJ.
+
+\begin{dndtable}
+\textbf{Exemple} & \textbf{Points d'expérience} \\
+Le personnage a survécu & 1 \\  
+Le joueur a bien interprété son personnage & 1 ou 2 \\ 
+Le personnage a entrepris une action héroïque & 1 \\
+Le personnage a appris des informations majeures & 1 ou 2 \\
+Le cycle actuel est terminé & 2 à 5 \emph{selon la difficulté et la durée du cycle}
+\end{dndtable}
+
+
+\chapter{Crédits et remerciements}
+
+\subsection{Crédits iconographiques}
+
+L'illustration de couverture a été créée par la talentueuse Diane Georges. Vous pouvez trouver ses créations sur son site Internet : \url{https://diane-georges.net}
+
+\end{document}
