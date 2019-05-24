@@ -1,0 +1,88 @@
+% Changing book to article will make the footers match on each page,
+% rather than alternate every other.
+%
+% Note that the article class does not have chapters.
+\documentclass[a4paper,10pt,twoside,twocolumn,openany,bg=print,justified]{dndarticle}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstring-captions.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[french]{babel}
+
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\title{Le Vol de l'Oiseau de Fer}
+\author{Antoine Lenoir}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\emph{Le Vol de l'Oiseau de Fer} est un scénario de découverte pour \emph{Don't Leave The Road} et l'univers d'\emph{Unterwald}. 
+
+À la poursuite d'une statue protectrice, les PJs affronteront de multiples dangers, humains comme extérieurs, et exploreront les territoires de la Basse-Forêt et de la Haute-Forêt.
+
+Ce scénario est modulaire. Certaines parties sont optionnelles, et peuvent être ajoutées au cas par cas.
+\end{abstract}
+
+\section{Contexte pour les joueurs}
+
+Les PJ habitent dans le petit village de l'Envol, une communauté paysanne située dans une plaine bordée par des montagnes, au bord du Lac de l'Unité. Au coeur du village, une étrange statue d'un oiseau de fer occupe une place importante, et la légende raconte que l'Oiseau protège l'Envol.
+
+\subsection{Unterwald}
+
+Il y a plusieurs siècles, le monde était tout autre. Nul ne sait ce qu'il s'est passé, mais la nature a repris ses droits sur les constructions de l'Homme. Les forêts se sont étendues, les bêtes sont devenues plus agressives, plus féroces, et l'Homme est passé de prédateur à proie.
+
+La technologie a bien régressé, faute de personnes sachant l'utiliser ou l'entretenir, et le niveau technologique est revenu à celui de la fin du Moyen-Âge. On trouve encore par endroits des restes de ce que fut la civilisation humaine lors de son apogée, mais ces restes sont plutôt traités comme des reliques d'un passé révolu que comme des outils.
+
+\subsection{L'Envol}
+
+Le village de l'Envol abrite 184 âmes, dont les PJs, et est l'un des principaux sites agricoles de la province de la Basse-Forêt. En effet, les alentours du village sont parfaitement plats, en comparaison avec les vallées encaissées du reste de la province.
+
+L'Envol est dirigé par le \textbf{Conseil des Anciens}, qui regroupe les cinq habitants les plus sages du village. Il est à noter cependant qu'ils ne sont pas pour autant les plus vieux.
+
+\subsection{L'Oiseau de Fer}
+
+L'Oiseau de Fer est une statue de grande taille, faite en métal. Ses ailes ont une envergure d'environ 12 mètres, et il repose sur trois roues enrobées d'un matériau noir. Sa queue est d'un rouge vif orné d'une croix blanche.
+
+\section{Une sombre nuit de novembre}
+
+Par une froide et sombre nuit de novembre, le village est réveillé par un puissant grognement mécanique qui semble démarrer sur la place centrale puis partir au loin vers l'ouest avant de s'estomper.
+
+Lorsque les PJs arrivent sur la place centrale, force est de constater que l'Oiseau de Fer a disparu.
+
+\begin{paperbox}{Conseils au MJ}
+La première réaction des villageois sera le choc. N'hésitez pas à faire confronter des habitants avec les PJs. Un vieillard agenouillé, les yeux pleins de larmes, ou un homme dans la fleur de l'âge qui agrippe un PJ par le col pour lui demander ce qu'il a vu.
+
+Les PJs doivent bien ressentir que la disparition de leur protection vient de plonger le village dans un profond désarroi et une immense détresse.
+\end{paperbox}
+
+\end{document}

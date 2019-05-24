@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.9)  23 MAY 2019 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.9)  23 MAY 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,7 +1229,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 39.
 (./lib/dndstrings-captions.sty)
 
 LaTeX Warning: Unused global option(s):
-    [bg=print].
+    [bg=print,justified].
 
 (./DontLeaveTheRoad.aux)
 \openout1 = `DontLeaveTheRoad.aux'.
@@ -1433,191 +1433,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/lmss/m/n/10 (+20) Surhumain. Il n'est pas
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/lmss/m/n/10 (+20) dif-fi-cile de dé-fon-cer des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/lmss/m/n/10 (+20) Extrêmement fort. Vous
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/lmss/m/n/10 (+20) êtes in-vaincu au bras de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/lmss/m/n/10 (+20) fer de-puis des an-nées et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/lmss/m/n/10 (+20) les mi-crobes fuient en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/lmss/m/n/10 (+20) Très fort, agile et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\T1/lmss/m/n/10 (+20) en-du-rant. Maxi-mum à
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/lmss/m/n/10 (+20) Faiblard. Mi-ni-mum à la
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 80--87
- 
+
  []
 
 
 Underfull \vbox (badness 7540) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmss/m/n/10 (+20) Surhumain. Votre es-prit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 1038) in paragraph at lines 99--99
 \T1/lmss/m/n/10 (+20) sur-en-traîné dé-tecte les
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 4846) in paragraph at lines 99--99
 \T1/lmss/m/n/10 (+20) moindres in-co-hé-rences,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) et votre per-cep-tion est
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) meilleure que celle du
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmss/m/n/10 (+20) Extrêmement doué.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) Vous êtes in-vaincu au
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) bras de fer de-puis des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) an-nées et les mi-crobes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmss/m/n/10 (+20) Très in-tel-li-gent et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) per-cep-tif. Maxi-mum à
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-[]|\T1/lmss/m/n/10 (+20) Myope comme une
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/lmss/m/n/10 (+20) taupe ou stu-pide.
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 93--100
- 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]|\T1/lmss/m/n/10 (+20) Surhumain. Votre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) verve et votre beauté
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) sont ré-vé-rées dans les
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]|\T1/lmss/m/n/10 (+20) Extrêmement
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) cha-ris-ma-tique. Il suf-fit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) que vous en-triez dans
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) une au-berge pour que
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) tous les re-gards se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]|\T1/lmss/m/n/10 (+20) Très beau,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) cha-ris-ma-tique et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmss/m/n/10 (+20) avec une belle verve.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]|\T1/lmss/m/n/10 (+20) Laid ou ef-facé.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 106--113
- 
+
  []
 
 
@@ -1631,17 +1471,22 @@ Package pdftex.def Info: img/footerscroll.pdf  used on input line 113.
 
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
 (Font)              Font shape `T1/pbk/l/it' tried instead on input line 142.
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 151.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 152.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
+ [4]
+Underfull \hbox (badness 2229) in paragraph at lines 168--169
+[]\T1/pbk/l/n/10 (+20) Si le ré-sul-tat est in-fé-rieur, l'ac-tion est
+ []
 
-[4]
 LaTeX Font Info:    Try loading font information for T1+fosj on input line 190.
 
- (c:/texlive/2018/texmf-dist/tex/latex/opensans/t1fosj.fd
+(c:/texlive/2018/texmf-dist/tex/latex/opensans/t1fosj.fd
 File: t1fosj.fd 2011/11/11 Fontinst v1.927 font definitions for T1/fosj.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1652,60 +1497,48 @@ LaTeX Font Info:    Font shape `T1/fosj/bx/n' in size <10> not available
 (Font)              Font shape `T1/fosj/b/n' tried instead on input line 190.
 LaTeX Font Info:    Font shape `T1/fosj/bx/sc' in size <10> not available
 (Font)              Font shape `T1/fosj/b/sc' tried instead on input line 190.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 216.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 217.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
  [5]
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
 Package pdftex.def Info: img/footerscroll.pdf  used on input line 248.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
+ [6
 
-[6]
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \vbox (badness 4096) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 298.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 303.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
  [7
 
 ]
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
-[]\T1/fosj/b/sc/10 Option : Jouer un per-son-nage plus
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 314--320
- 
+
  []
-
-
-Underfull \vbox (badness 1810) has occurred while \output is active []
 
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
 Package pdftex.def Info: img/footerscroll.pdf  used on input line 335.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
- [8]
+[8]
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
 Package pdftex.def Info: img/footerscroll.pdf  used on input line 394.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
-
-[9
+ [9
 
 ]
 File: img/footerscroll.pdf Graphic file (type pdf)
@@ -1713,7 +1546,7 @@ File: img/footerscroll.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/footerscroll.pdf  used on input line 435.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
  [10]
-Underfull \vbox (badness 5533) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
@@ -1722,54 +1555,32 @@ Package pdftex.def Info: img/footerscroll.pdf  used on input line 495.
  [11
 
 ]
+Underfull \hbox (badness 3568) in paragraph at lines 505--506
+[]\T1/pbk/db/n/10 Récupération na-tu-relle : \T1/pbk/l/n/10 (+20) Pour chaque
+ []
+
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
 Package pdftex.def Info: img/footerscroll.pdf  used on input line 514.
 (pdftex.def)             Requested size: 597.5452pt x 43.00287pt.
-
 [12]
 Underfull \hbox (badness 10000) in paragraph at lines 538--538
 []|\T1/lmss/bx/n/10 Taille de l'arme
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
-[]|\T1/lmss/m/n/10 (+20) Petite (cou-teau, pe-tit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
-[]|\T1/lmss/m/n/10 (+20) Moyenne (épée, gros
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
-\T1/lmss/m/n/10 (+20) pis-to-let, pistolet-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
+Underfull \hbox (badness 2460) in paragraph at lines 538--538
 []|\T1/lmss/m/n/10 (+20) Grande (épée à deux
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
-\T1/lmss/m/n/10 (+20) mains, fu-sil de chasse,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 534--539
- 
+
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 555--555
 []|\T1/lmss/bx/n/10 Type d'ar-mure
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--555
-[]|\T1/lmss/m/n/10 (+20) Légère (Blou-son de
  []
 
 
@@ -1789,7 +1600,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--555
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 551--556
- 
+
  []
 
 File: img/footerscroll.pdf Graphic file (type pdf)
@@ -1800,13 +1611,10 @@ Package pdftex.def Info: img/footerscroll.pdf  used on input line 565.
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 573--582
- 
+
  []
 
 Missing character: There is no ; in font nullfont!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Missing character: There is no ; in font nullfont!
 
 Underfull \hbox (badness 10000) in paragraph at lines 623--623
@@ -1814,93 +1622,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 623--623
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
+Underfull \hbox (badness 7649) in paragraph at lines 623--623
 []|\T1/lmss/m/n/10 (+20) La ca-rac-té-ris-tique en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) ques-tion peut dé-pas-ser
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-[]|\T1/lmss/m/n/10 (+20) La créa-ture est
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) ef-frayante. Les
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) de cette créa-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) doivent faire un test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) d'Es-prit à dif-fi-culté 12
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) sous peine de perdre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-[]|\T1/lmss/m/n/10 (+20) L'adversaire est
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) com-posé de mul-tiples
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) pe-tites créa-tures. Les
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) dé-gâts re-çus sont
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) li-mi-tés à 1 (2 en cas de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-[]|\T1/lmss/m/n/10 (+20) La forme de la créa-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) est com-plè-te-ment
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) aber-rante. La créa-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
-\T1/lmss/m/n/10 (+20) est im-mu-ni-sée aux
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 617--624
- 
+
  []
 
 
@@ -1916,53 +1644,13 @@ Package pdftex.def Info: img/footerscroll.pdf  used on input line 624.
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <12> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 627.
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) Le per-son-nage a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) Le joueur a bien
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-\T1/lmss/m/n/10 (+20) in-ter-prété son
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) Le per-son-nage a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-\T1/lmss/m/n/10 (+20) en-tre-pris une ac-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) Le per-son-nage a ap-pris
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-\T1/lmss/m/n/10 (+20) des in-for-ma-tions
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) Le cycle ac-tuel est
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
-[]|\T1/lmss/m/n/10 (+20) 2 à 5 \T1/lmss/m/sl/10 (+20) se-lon la dif-fi-culté
+Underfull \hbox (badness 4556) in paragraph at lines 661--661
+[]|\T1/lmss/m/n/10 (+20) Le per-son-nage a ap-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 655--662
- 
+
  []
 
 File: img/footerscroll.pdf Graphic file (type pdf)
@@ -1997,38 +1685,28 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
 Package rerunfilecheck Info: File `DontLeaveTheRoad.out' has not changed.
 (rerunfilecheck)             Checksum: 3D88FFEEB99735A797349564EB7E6F62;2187.
- )
-(\end occurred when \iftrue on line 602 was incomplete)
-(\end occurred when \iftrue on line 586 was incomplete)
-(\end occurred when \iftrue on line 309 was incomplete)
-(\end occurred when \iftrue on line 305 was incomplete)
-(\end occurred when \iftrue on line 297 was incomplete)
-(\end occurred when \iftrue on line 289 was incomplete)
-(\end occurred when \iftrue on line 271 was incomplete)
-(\end occurred when \iftrue on line 257 was incomplete)
-(\end occurred when \iftrue on line 190 was incomplete) 
+ ) 
 Here is how much of TeX's memory you used:
- 36925 strings out of 492639
- 700603 string characters out of 6133088
- 1182911 words of memory out of 5000000
+ 37027 strings out of 492639
+ 701577 string characters out of 6133088
+ 1182985 words of memory out of 5000000
  40090 multiletter control sequences out of 15000+600000
- 580792 words of font info for 105 fonts, out of 8000000 for 9000
+ 586851 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,16n,122p,826b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-d
-ist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/
-lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{c:/texliv
-e/2018/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}<c:/texlive/2018/tex
-mf-dist/fonts/type1/public/opensans/OpenSans-Bold.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/lm/lmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lm
-ssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2018/texmf
--dist/fonts/type1/urw/bookman/ubkl8a.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/urw/bookman/ubkli8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/u
-crr8a.pfb>
-Output written on DontLeaveTheRoad.pdf (16 pages, 209821 bytes).
+ 66i,17n,122p,826b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2018/texm
+f-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips
+/opensans/opensans-03.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/opensans/
+opensans-04.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/opensans/opensans-0
+1.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/opensans/OpenSans-Bold.pfb
+><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texl
+ive/2018/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
+blic/lm/lmsso10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8a.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb><c:/texlive/2018/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on DontLeaveTheRoad.pdf (16 pages, 213593 bytes).
 PDF statistics:
  303 PDF objects out of 1000 (max. 8388607)
  272 compressed objects within 3 object streams

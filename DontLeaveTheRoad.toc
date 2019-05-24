@@ -5,7 +5,7 @@
 \contentsline {section}{Aspects}{4}{section*.4}
 \contentsline {section}{Points de destin}{5}{section*.5}
 \contentsline {section}{Actions}{5}{section*.6}
-\contentsline {section}{Sc\IeC {\'e}nario, Cycle et Campagne}{6}{section*.7}
+\contentsline {section}{Sc\IeC {\'e}nario, Cycle et Campagne}{5}{section*.7}
 \contentsline {section}{Progression des personnages}{6}{section*.8}
 \contentsline {chapter}{Cr\IeC {\'e}ation de personnage}{7}{chapter*.9}
 \contentsline {section}{Choisir un concept de personnage}{7}{section*.10}
