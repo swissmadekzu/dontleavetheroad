@@ -1,7 +1,7 @@
 # Run CI/CD jobs in Docker images:
 # https://docs.semaphoreci.com/article/127-custom-ci-cd-environment-with-docker
 version: v1.0
-name: Hello Semaphore
+name: Building PDFs
 agent:
   machine:
     type: e1-standard-2
@@ -15,5 +15,7 @@ blocks:
       - name: Build
         commands:
           - checkout
-          - latexmk ./DontLeaveTheRoad.tex
-          - latexmk ./LeVolDeLOiseauDeFer.tex
+          - pdflatex ./DontLeaveTheRoad.tex
+          - pdflatex ./DontLeaveTheRoad.tex
+          - pdflatex ./LeVolDeLOiseauDeFer.tex
+          - pdflatex ./LeVolDeLOiseauDeFer.tex
