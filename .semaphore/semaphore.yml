@@ -9,10 +9,11 @@ agent:
     - name: main
       image: danteev/texlive
 blocks:
-  - name: Docker-based example
+  - name: Run TeX
     task:
       jobs:
       - name: Build
         commands:
           - checkout
-          - latexmk DontLeaveTheRoad.tex
+          - latexmk ./DontLeaveTheRoad.tex
+          - latexmk ./LeVolDeLOiseauDeFer.tex
